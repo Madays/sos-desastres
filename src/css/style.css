@@ -1,11 +1,29 @@
 /*@import "variables/variables";
 @import "mixin/mixin";*/
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
+/***************General***************/
+body {
+  font-family: "Merriweather Sans"; }
+
+.accion {
+  background: url(../images/map-background.png);
+  width: 100%;
+  height: 100vh; }
+  .accion .content {
+    background: rgba(8, 19, 48, 0.8); }
+    .accion .content h2 {
+      margin-bottom: 100px; }
+    .accion .content button {
+      background: #ff6868;
+      width: 230px;
+      margin: 10px 0;
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
+
 /************************GENERAL************************/
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  outline: 1px solid rgba(0, 255, 0, 0.3); }
+  box-sizing: border-box; }
 
 section {
   background: rgba(0, 0, 255, 0.3);
