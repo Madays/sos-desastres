@@ -78,24 +78,20 @@ function goToSection(_id)
 }
  
 function initAutocomplete() {
-    
-    
-    $("#hospital").click(function (){
-    if ("geolocation" in navigator){
-            navigator.geolocation.getCurrentPosition(function(position){ 
-                    infoWindow = new google.maps.InfoWindow({map: map});
-                    var pos = {lat: position.coords.latitude, lng: position.coords.longitude};
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent("Found your location <br />Lat : "+position.coords.latitude+" </br>Lang :"+ position.coords.longitude);
-                    map.panTo(pos);
-                });
-        }else{
-            console.log("Browser doesn't support geolocation!");
+    getLocation();
+}
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        alert("Geolocation is not supported by this browser.");
     }
-});
-    
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -16.459908, lng: -71.515903},
+}
+
+function showPosition(position) {
+            var map = new google.maps.Map(document.getElementById('map'), {
+            
+            center: {lat: position.coords.latitude, lng: position.coords.longitude},
             zoom: 13,
             mapTypeId: 'roadmap',
             disableDefaultUI: true
@@ -160,6 +156,7 @@ function initAutocomplete() {
           map.fitBounds(bounds);
         });
     
-    
 }
+
+
 
