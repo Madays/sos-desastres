@@ -22,22 +22,28 @@
 <section id="login" class="visible">
 	<div class="content">
 		<div class="container">
-           <div class="logo"><i class="fa fa-map-marker" aria-hidden="true"></i>
-           <h2>SoS DESASTRE</h2></div>
+           <div class="logo">
+                <img src="images/logo-sos.png" alt="" class="img-responsive">
+               <h2>DESASTRE</h2>
+           </div>
            
            <div class="col-md-6 col-md-offset-3">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fuga eaque sequi ad odio eos veniam repellendus, molestias dolor consectetur, saepe incidunt, nobis laboriosam iste explicabo excepturi. Ipsam, consequuntur, suscipit.</p>
-               
-           
-               <button id="facebook" class="btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i>
-                    Facebook</button> <br>
-                <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i>
-                google</button> 
+               <button id="facebook" class="btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</button> 
+               <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+               </fb:login-button>
+              <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i> Google</button><br>
+                <button id="registrate" class="btn-lg"> Registrate</button> 
             </div>
             <button id="btn_inicio">va accion</button>   
+               
+            <div id="status">
+            </div>
+                
+            </div>   
 		</div>
 	</div>
-</section>
+</section> 
 <!----------------ACCION--------------------------------------------------->
 <section id="accion" class="accion">
 	<div class="content">
@@ -163,5 +169,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="js/hospitales.js"></script>
+	<script src="js/login-f.js"></script>	
 </body>
 </html>
