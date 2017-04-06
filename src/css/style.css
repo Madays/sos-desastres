@@ -89,8 +89,6 @@ body {
 
 section#login {
   background: url("../pictures/map-background.png"); }
-  section#login * {
-    outline: 1px solid rgba(0, 255, 0, 0.3); }
   section#login .content {
     background: rgba(8, 19, 48, 0.8); }
     section#login .content .logo {
@@ -112,14 +110,18 @@ section#login {
       background: #ff6868;
       border-color: #ff6868; }
 
-section#registro h2 {
-  padding-bottom: 20px; }
-section#registro form .form-group {
-  margin-bottom: 5px !important; }
-section#registro form button {
-  width: 100%;
-  margin: 10px 0;
-  background: #ff6868; }
+section#registro {
+  background: url("../pictures/map-background.png"); }
+  section#registro .content {
+    background: rgba(8, 19, 48, 0.8); }
+    section#registro .content h2 {
+      padding-bottom: 20px; }
+    section#registro .content form .form-group {
+      margin-bottom: 5px !important; }
+    section#registro .content form button {
+      width: 100%;
+      margin: 10px 0;
+      background: #ff6868; }
 
 .profile {
   border: 3px solid #B7B7B7;
