@@ -6,7 +6,7 @@ function init()
     currentSection= $('#login');
     $('#btn_inicio').click(onClickAccion);
     $('#btn_reportar').click(onClickReportar);
-    //$('#btn_tipo_ayuda').click(onClickTipoAyuda);
+    $('.btn_tipo_ayuda').click(onClickAccion);
     $('#btn_centros_ayuda').click(onClickCentroAyuda); $('#btn_lista_desastres').click(onClickListDesastre);
     /*$('#btn_info_desastres').click(onClickInfoDesastre);*/
 }
@@ -30,7 +30,6 @@ function onClickReportar(){
     onClickTipoAyuda();
     
 }
-
 function onClickTipoAyuda()
 {
     var btnBuscarAyuda = $("#btn_tipo_ayuda");       btnBuscarAyuda.click(showDivBuscarAyuda);
