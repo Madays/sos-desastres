@@ -39,8 +39,10 @@ section#login{
     
     
 }
+
+
 section#registro{
-    color: black;
+    
     h2{
         padding-bottom: 20px;
     }
@@ -49,8 +51,9 @@ section#registro{
     margin-bottom: 5px !important; 
         }
         button{
-            width: 90%;
+            width: 100%;
             margin: 10px 0;
+            background: rgb(255,104,104);
         }
     }
     

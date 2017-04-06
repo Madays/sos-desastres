@@ -22,11 +22,12 @@ section{
     display: none;
     opacity: 0;
     color: #fff;
+    //background: url("../pictures/map-background.png");
 }
 .visible{
     display: table;
     opacity: 1;
-    
+    //background: rgba(8,19,48,0.8);
 }
 .content{
     display: table-cell;
