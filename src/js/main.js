@@ -155,6 +155,7 @@ function showPosition(position) {
           });
           map.fitBounds(bounds);
         });
+}
 
 
 
