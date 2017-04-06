@@ -63,9 +63,10 @@
         background-color: #12127c;
         margin-top: 10px;
     }
-    input {
+    #pac-input {
         position: absolute;
         z-index: 5;
+        width: 100%;
         top: 10px;
         padding: 10px 0;
         padding-top: 20px;
