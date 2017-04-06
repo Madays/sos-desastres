@@ -80,22 +80,22 @@
                <!--action="/action_page_binary.asp" method="post" enctype="multipart/form-data"-->
                 <div id="d-info">
                    <form method="post" action="" name="validation" id="form-info">
-                        <select class="form-control">    
+                        <select id="myselect" class="form-control">    
                             <option value="">Selecciona un tipo de desastre</option>
-                            <option value="">Incendios</option>
-                            <option value="">Derrumbe</option>
-                            <option value="">Inundación</option>
-                            <option value="volvo">Huayco</option>
-                            <option value="">Terremoto</option>
-                            <option value="">Tsunami</option>
+                            <option value="incendio">Incendios</option>
+                            <option value="derrumbe">Derrumbe</option>
+                            <option value="inundacion">Inundación</option>
+                            <option value="huayco">Huayco</option>
+                            <option value="terremoto">Terremoto</option>
+                            <option value="tsunami">Tsunami</option>
                         </select>    
-                        <br>
-                        <input class="form-control" type="text" placeholder="Dirección exacta">
-                        <br>
-                        <input class="form-control" accept="image/*" type="file" capture>
-                        <img id="uploadPreview" style="width: 100px; height: 100px;" />  
-                        
-                        <button type="submit" value="Submit" id="btn_tipo_ayuda">NEXT</button> 
+                    <br>
+                    <input id="direction" class="form-control" type="text" placeholder="Dirección exacta">
+                    <br>
+                    <input id="form-image" class="form-control" accept="image/*" type="file" capture onchange="previewImage()">
+                    <br>
+                    <img id="uploadPreview" style="width: 100px; height: 100px;" />  
+                    <button type="submit" value="Submit" class="btn_tipo_ayuda">NEXT</button> 
                     </form> 
                 </div>
                 
@@ -183,9 +183,10 @@
          async defer></script>
          <!--
          AIzaSyCr4N1khF2DNbZAhVBynGOvwtVIqYdlF1A-->
-         <script src="js/login-g.js"></script>
+    <script src="js/login-g.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
+	<script src="js/server.js"></script>
 	
 </body>
 </html>
