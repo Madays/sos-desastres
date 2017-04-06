@@ -22,39 +22,81 @@
 <section id="login" class="visible">
 	<div class="content">
 		<div class="container">
-           INICIO
-            <button id="btn_inicio">NEXT</button>    
+           <div class="logo"><i class="fa fa-map-marker" aria-hidden="true"></i>
+           <h2>SoS DESASTRE</h2></div>
+           
+           <div class="col-md-6 col-md-offset-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fuga eaque sequi ad odio eos veniam repellendus, molestias dolor consectetur, saepe incidunt, nobis laboriosam iste explicabo excepturi. Ipsam, consequuntur, suscipit.</p>
+               
+           
+               <button id="facebook" class="btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i>
+Facebook</button> <br>
+                <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i>
+google</button> 
+            </div>   
 		</div>
 	</div>
 </section>
 <!----------------ACCION--------------------------------------------------->
-<section id="accion">
+<section id="accion" class="accion">
 	<div class="content">
 		<div class="container">
-            ACCION
-		    <button id="btn_accion">next button</button>  	
+           <h2>¿En qué situación te encuentras?</h2>
+            <p><button class="btn btn-lg" id="">Brindar Ayuda</button></p>
+            <p><button class="btn btn-lg" id="">Reportar Desastre</button></p>
+            <p><button class="btn btn-lg" id="">Buscar Ayuda cercana</button></p>
+		    <!--<button id="btn_accion">next button</button>-->  	
 		</div>
 	</div>
 </section>
 
 <!----------------REPORTAR-DESASTRE--------------------------------------------------->
-<section id="reportar-desastre" >
+<section id="reportar-desastre">
 	<div class="content">
-		<div class="container">
+            <div class="container">
             REPORTAR-DESASTRE
-           <button id="btn_reportar">NEXT</button>
+                <div id="map"></div>
+
+               <!--action="/action_page_binary.asp" method="post" enctype="multipart/form-data"-->
+                <div id="d-info">
+                   <form>
+                        <select class="form-control">
+                            <option value="">Incendios</option>
+                            <option value="">Derrumbe</option>
+                            <option value="">Inundación</option>
+                            <option value="volvo">Huayco</option>
+                            <option value="">Terremoto</option>
+                            <option value="">Tsunami</option>
+                        </select>    
+                        <br>
+                        <input class="form-control" type="text" placeholder="Dirección exacta">
+                        <br>
+                        <input class="form-control" accept="image/*" type="file" capture>  
+                        
+                        <button type="submit" value="Submit" id="btn_reportar">NEXT</button> 
+                    </form> 
+                </div>
+                <!--
+                <div id="m-buscar">
+                    
+                </div>
+                -->
+            </div>
         </div>
+            
     </div>
 </section>
-<!----------------BUSCAR-AYUDA--------------------------------------------------->            
+<!----------------BUSCAR-AYUDA------------------------------------------------            
 <section id="buscar-ayuda">
 	<div class="content">
 		<div class="container">
             BUSCAR-AYUDA
+            <div class="map"></div>
 		    <button id="btn_busca_ayuda">NEXT</button>	
 		</div>
 	</div>
 </section>
+--->
 <!----------------TIPO-AYUDA--------------------------------------------------->
 <section id="tipo-ayuda">
 	<div class="content">
@@ -93,6 +135,8 @@
 </section>
 <!----------------SCRIPTS--------------------------------------------------->	
     <script src="js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI"
+        async deser></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
