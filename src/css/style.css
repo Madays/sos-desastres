@@ -110,15 +110,16 @@ section#login {
       background: #ff6868;
       border-color: #ff6868; }
 
-section#registro {
+section#registro-comp {
   background: url("../pictures/map-background.png"); }
-  section#registro .content {
+  section#registro-comp .content {
     background: rgba(8, 19, 48, 0.8); }
-    section#registro .content h2 {
-      padding-bottom: 20px; }
-    section#registro .content form .form-group {
+    section#registro-comp .content h2 {
+      padding-bottom: 20px;
+      color: cornflowerblue; }
+    section#registro-comp .content form .form-group {
       margin-bottom: 5px !important; }
-    section#registro .content form button {
+    section#registro-comp .content form button {
       width: 100%;
       margin: 10px 0;
       background: #ff6868; }
@@ -148,29 +149,29 @@ section#registro {
 .proDetails {
   float: left; }
 
-section#login {
+section#log-orga {
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
   background: url("../pictures/map-background.png"); }
-  section#login .content {
+  section#log-orga .content {
     background: rgba(8, 19, 48, 0.8); }
-    section#login .content body {
+    section#log-orga .content body {
       background: #456;
       font-family: 'Open Sans', sans-serif; }
-    section#login .content .login {
-      width: 400px;
+    section#log-orga .content .login {
+      width: 100%;
       margin: 16px auto;
       font-size: 16px; }
-    section#login .content .login-header,
-    section#login .content .login p {
+    section#log-orga .content .login-header,
+    section#log-orga .content .login p {
       margin-top: 0;
       margin-bottom: 0; }
-    section#login .content .login-triangle {
+    section#log-orga .content .login-triangle {
       width: 0;
       margin-right: auto;
       margin-left: auto;
       border: 12px solid transparent;
       border-bottom-color: #ff6868; }
-    section#login .content .login-header {
+    section#log-orga .content .login-header {
       background: #ff6868;
       padding: 20px;
       font-size: 1.4em;
@@ -178,12 +179,12 @@ section#login {
       text-align: center;
       text-transform: uppercase;
       color: #fff; }
-    section#login .content .login-container {
+    section#log-orga .content .login-container {
       background: #ebebeb;
       padding: 12px; }
-    section#login .content .login p {
+    section#log-orga .content .login p {
       padding: 12px; }
-    section#login .content .login input {
+    section#log-orga .content .login input {
       box-sizing: border-box;
       display: block;
       width: 100%;
@@ -193,22 +194,22 @@ section#login {
       outline: 0;
       font-family: inherit;
       font-size: 0.95em; }
-    section#login .content .login input[type="email"],
-    section#login .content .login input[type="password"] {
+    section#log-orga .content .login input[type="email"],
+    section#log-orga .content .login input[type="password"] {
       background: #fff;
       border-color: #bbb;
       color: #555; }
-    section#login .content .login input[type="email"]:focus,
-    section#login .content .login input[type="password"]:focus {
+    section#log-orga .content .login input[type="email"]:focus,
+    section#log-orga .content .login input[type="password"]:focus {
       border-color: #888; }
-    section#login .content .login input[type="submit"] {
+    section#log-orga .content .login input[type="submit"] {
       background: #ff6868;
       border-color: transparent;
       color: #fff;
       cursor: pointer; }
-    section#login .content .login input[type="submit"]:hover {
+    section#log-orga .content .login input[type="submit"]:hover {
       background: #ff6868; }
-    section#login .content .login input[type="submit"]:focus {
+    section#log-orga .content .login input[type="submit"]:focus {
       border-color: #ff6868; }
 
 * {
