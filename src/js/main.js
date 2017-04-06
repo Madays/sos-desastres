@@ -20,34 +20,34 @@ function onClickInicio()
 function onClickAccion()
 {
     goToSection('reportar-desastre');
-    //var toTipoAyuda = $('#m-buscar');
-    //toTipoAyuda().hide();
-    
+    var toTipoAyuda = $('#m-buscar');
+    toTipoAyuda.hide();
     initMap();
     
-    var btnBuscarAyuda = $("#btn_reportar");
-    
-    btnBuscarAyuda.click(showBuscarAyuda);    
+    onClickReportar();    
 }
 
-function showBuscarAyuda(){
-    
+function onClickReportar(){
+var btnBuscarAyuda = $("#btn_reportar");        btnBuscarAyuda.click(showDivBuscarAyuda);
+function showDivBuscarAyuda(event){
+    event.preventDefault();
     var toBuscarAyuda = $('#d-info');
-    //var toTipoAyuda = $('#m-buscar');
-    
-    toBuscarAyuda.hide();
-    //toTipoAyuda.show();
-    
-    
+    toBuscarAyuda.hide();    
+    var toTipoAyuda = $('#m-buscar');
+    //console.log(toTipoAyuda.show());
+    toTipoAyuda.show();
+        
+    }
 }
 
 
 
 
-function onClickReportar()
+
+/*function onClickReportar()
 {
     goToSection('buscar-ayuda');
-}
+}*/
 function onClickBuscaAyuda()
 {
     goToSection('tipo-ayuda');
