@@ -12,12 +12,16 @@ body {
   .accion .content {
     background: rgba(8, 19, 48, 0.8); }
     .accion .content h2 {
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      font-weight: bold; }
     .accion .content button {
       background: #ff6868;
       width: 230px;
       margin: 10px 0;
       box-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
+    .accion .content button:hover {
+      background: #000;
+      color: #fff; }
 
 /************************GENERAL************************/
 * {
