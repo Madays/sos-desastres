@@ -36,20 +36,22 @@ function onClickTipoAyuda()
     var btnBuscarAyuda = $("#btn_tipo_ayuda");       btnBuscarAyuda.click(showDivBuscarAyuda);
 }
 function showDivBuscarAyuda(event){
-        alert('hospital');
         event.preventDefault();
-        alert('ayuda');
         var toBuscarAyuda = $('#d-info');
         var toTipoAyuda = $('#m-buscar');
         toBuscarAyuda.hide();            
         toTipoAyuda.show();
         $('#pac-input').show();                
     }
- $('#bombero').on('click',function(){search('bomberos');});
+ $('#bombero').on('click',function(){search('bombero cerca de ong paz peru arequipa');});
+ $('#hospital').on('click',function(){search('hospital cerca de ong paz peru arequipa');});
+$('#comisaria').on('click',function(){search('comisaria cerca de ong paz peru arequipa');});
     function search(place){
             
              $('#pac-input').val('');
-             $('#pac-input').val(place).focus().trigger({type:'keypress',which:13});
+             $('#pac-input').val(place).focus().trigger({
+                 type:'keypress',which:13,                
+             });
 
         }
 
@@ -126,7 +128,9 @@ function showPosition(position) {
           markers = [];
 
           // For each place, get the icon, name and location.
-          var bounds = new google.maps.LatLngBounds();
+         var delimitadorSurOeste = {lat:-18.088474,lng:-70.409693};
+         var delimitadorNorEste = {lat:-0.1998849,lng:-75.2585993};
+          var bounds = new google.maps.LatLngBounds(delimitadorSurOeste,delimitadorNorEste);
           places.forEach(function(place) {
             if (!place.geometry) {
               console.log("Returned place contains no geometry");
@@ -139,13 +143,19 @@ function showPosition(position) {
               anchor: new google.maps.Point(17, 34),
               scaledSize: new google.maps.Size(25, 25)
             };
-
+            var request = {
+                location: {lat:-16.4571456,lng:-71.5657791},
+                radius: '500',
+                types: ['store'],
+                zoom:16
+              };
             // Create a marker for each place.
             markers.push(new google.maps.Marker({
               map: map,
               icon: icon,
               title: place.name,
-              position: place.geometry.location
+              position: place.geometry.location,
+                request:request
             }));
 
             if (place.geometry.viewport) {
@@ -158,6 +168,3 @@ function showPosition(position) {
           map.fitBounds(bounds);
         });
 }
-
-
-
