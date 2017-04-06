@@ -12,19 +12,12 @@
 	<link rel="stylesheet" href="css/queries/queries.css">
 	 <meta name="google-signin-client_id" content="1015828251628-j6p6g2hugetkfovug27i1l3nlaem445d.apps.googleusercontent.com">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parse/1.9.2/parse.min.js"></script>
+    <script src="js/login-f.js"></script>	
     <script>
         Parse.initialize("01a59dc77c1f4eb02b3e53edc2eea6268c3764d4");
          Parse.serverURL = 'https://13.85.14.164/parse';
+        initFB();
         
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '406214259746931',
-            cookie     : true,  // enable cookies to allow the server to access 
-                                // the session
-            xfbml      : true,  // parse social plugins on this page
-            version    : 'v2.8' // use graph api version 2.8
-          });
-        };
     </script>
 </head>
 <body class="text-center">
@@ -192,7 +185,6 @@
          <script src="js/login-g.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
-	<script src="js/hospitales.js"></script>
-	<script src="js/login-f.js"></script>	
+	
 </body>
 </html>
