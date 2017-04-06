@@ -43,7 +43,7 @@ function showDivBuscarAyuda(event){
         toTipoAyuda.show();
         $('#pac-input').show();                
     }
- $('#bombero').on('click',function(){search('bombero cerca de ong paz peru arequipa');});
+ $('#bombero').on('click',function(){search('bombero');});
  $('#hospital').on('click',function(){search('hospital cerca de ong paz peru arequipa');});
 $('#comisaria').on('click',function(){search('comisaria cerca de ong paz peru arequipa');});
     function search(place){
@@ -103,7 +103,7 @@ function showPosition(position) {
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
-        var searchBox = new google.maps.places.SearchBox(input);
+        var searchBox = new google.maps.places.SearchBox(input+'arequipa ');
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
