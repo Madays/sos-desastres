@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--REQUIRED STYLE SHEETS-->
-	<link rel="stylesheet" href="sass/style.scss">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/queries/queries.css">
 </head>
 <body class="text-center">
@@ -36,23 +36,52 @@
 </section>
 
 <!----------------REPORTAR-DESASTRE--------------------------------------------------->
-<section id="reportar-desastre" >
+<section id="reportar-desastre">
 	<div class="content">
-		<div class="container">
+            <div class="container">
             REPORTAR-DESASTRE
-           <button id="btn_reportar">NEXT</button>
+                <div id="map"></div>
+
+               <!--action="/action_page_binary.asp" method="post" enctype="multipart/form-data"-->
+                <div id="d-info">
+                   <form>
+                        <select class="form-control">
+                            <option value="">Incendios</option>
+                            <option value="">Derrumbe</option>
+                            <option value="">Inundación</option>
+                            <option value="volvo">Huayco</option>
+                            <option value="">Terremoto</option>
+                            <option value="">Tsunami</option>
+                        </select>    
+                        <br>
+                        <input class="form-control" type="text" placeholder="Dirección exacta">
+                        <br>
+                        <input class="form-control" accept="image/*" type="file" capture>  
+                        
+                        <button type="submit" value="Submit" id="btn_reportar">NEXT</button> 
+                    </form> 
+                </div>
+                <!--
+                <div id="m-buscar">
+                    
+                </div>
+                -->
+            </div>
         </div>
+            
     </div>
 </section>
-<!----------------BUSCAR-AYUDA--------------------------------------------------->            
+<!----------------BUSCAR-AYUDA------------------------------------------------            
 <section id="buscar-ayuda">
 	<div class="content">
 		<div class="container">
             BUSCAR-AYUDA
+            <div class="map"></div>
 		    <button id="btn_busca_ayuda">NEXT</button>	
 		</div>
 	</div>
 </section>
+--->
 <!----------------TIPO-AYUDA--------------------------------------------------->
 <section id="tipo-ayuda">
 	<div class="content">
@@ -91,6 +120,8 @@
 </section>
 <!----------------SCRIPTS--------------------------------------------------->	
     <script src="js/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI"
+        async deser></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
