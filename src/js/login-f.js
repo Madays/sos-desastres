@@ -47,8 +47,10 @@ function UserLogin(res){
     sessionStorage.setItem('school', res.attributes.school);
     sessionStorage.setItem('username', res.attributes.name);
     sessionStorage.setItem('token', res.getSessionToken());
+    onClickAccion();
     //window.location = '/';
 }
+
 //si el usuario no esta en la base de datos
 function registrarUserFacebook(response){
     console.log("register userFabeook");
@@ -97,7 +99,8 @@ function logout(){
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
-    }, {scope:'email'});
+        
+    }, {scope:'email,public_profile'});
     //recupera el correo electronico con scope
   }
 
