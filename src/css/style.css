@@ -84,6 +84,7 @@ body {
     z-index: 5;
     top: 10px;
     padding: 10px 0;
+    padding-top: 20px;
     color: black; }
 
 section#login {
