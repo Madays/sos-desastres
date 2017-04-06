@@ -24,8 +24,13 @@ body {
       color: #fff; }
 
 /************************GENERAL************************/
+
 * {
-  outline: 1px solid rgba(255, 0, 0, 0.4) !important; }
+  outline: 1px solid rgba(255, 0, 0, 0.4) !important; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
 
 #map {
   position: absolute;
@@ -56,6 +61,7 @@ body {
     width: 95%;
     margin: 0 auto; }
 
+
 section#login {
   background: url("../pictures/map-background.png"); }
   section#login .content {
@@ -76,10 +82,7 @@ section#login {
       background: #ff6868;
       border-color: #ff6868; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+
 
 section {
   position: absolute;
