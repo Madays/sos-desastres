@@ -122,7 +122,7 @@ function logout(){
     statusChangeCallback(response);
   });
 
-  };
+  
 
   // Load the SDK asynchronously
   (function(d, s, id) {
