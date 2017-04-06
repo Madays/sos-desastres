@@ -40,6 +40,7 @@ function onClickTipoAyuda()
         var toTipoAyuda = $('#m-buscar');
         //console.log(toTipoAyuda.show());
         toTipoAyuda.show();
+        
 
     }
     
@@ -90,6 +91,18 @@ function showPosition(position) {
        position: {lat: myLatLng.lat, lng: myLatLng.lon},
        title: 'Hello World!'
    });
-       
+    
+    /*
+    var hospitales = new hospitalesArequipa;
+    
+    for(var i=0;i<=hospitales.length;i++){
+       var marker1 = new google.maps.Marker({
+         map: map,
+         position: hospitales[i],            
+         title: 'Hello World!',
+         //icon:"img/car.png"
+       });    
+    } 
+    */
     
 }
