@@ -13,24 +13,40 @@
 </head>
 <body class="text-center">
 	
-	<header>
+<header>
+
+
 	
-    </header>
+</header>
 <!----------------LOGIN--------------------------------------------------->
 <section id="login" class="visible">
 	<div class="content">
 		<div class="container">
-           INICIO
-            <button id="btn_inicio">NEXT</button>    
+           <div class="logo"><i class="fa fa-map-marker" aria-hidden="true"></i>
+           <h2>SoS DESASTRE</h2></div>
+           
+           <div class="col-md-6 col-md-offset-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fuga eaque sequi ad odio eos veniam repellendus, molestias dolor consectetur, saepe incidunt, nobis laboriosam iste explicabo excepturi. Ipsam, consequuntur, suscipit.</p>
+               
+           
+               <button id="facebook" class="btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i>
+                    Facebook</button> <br>
+                <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i>
+                google</button> 
+            </div>
+            <button id="btn_inicio">va accion</button>   
 		</div>
 	</div>
 </section>
 <!----------------ACCION--------------------------------------------------->
-<section id="accion">
+<section id="accion" class="accion">
 	<div class="content">
 		<div class="container">
-            ACCION
-		    <button id="btn_accion">next button</button>  	
+           <h2>¿En qué situación te encuentras?</h2>
+            <p><button class="btn btn-lg" id="btn_reportar">Reportar Desastre</button></p>
+            <p><button class="btn btn-lg" id="btn_buscar_ayuda">Buscar Ayuda cercana</button></p>
+            <p><button class="btn btn-lg" id="">Brindar Ayuda</button></p>
+		    <!--<button id="btn_accion">next button</button>-->  	
 		</div>
 	</div>
 </section>
@@ -58,7 +74,7 @@
                         <br>
                         <input class="form-control" accept="image/*" type="file" capture>
                         
-                        <button type="submit" value="Submit" id="btn_reportar">NEXT</button> 
+                        <button type="submit" value="Submit" id="btn_tipo_ayuda">NEXT</button> 
                     </form> 
                 </div>
                 
@@ -76,35 +92,34 @@
                 
             </div>
         </div>
-            
-    </div>
 </section>
-<!----------------BUSCAR-AYUDA------------------------------------------------            
+<!----------------BUSCAR-AYUDA--------------------------------------------------->            
 <section id="buscar-ayuda">
 	<div class="content">
 		<div class="container">
             BUSCAR-AYUDA
             <div class="map"></div>
-		    <button id="btn_busca_ayuda">NEXT</button>	
+		    <!--<button id="btn_busca_ayuda">NEXT</button>-->	
 		</div>
 	</div>
 </section>
---->
-<!----------------TIPO-AYUDA--------------------------------------------------->
+
+<!----------------TIPO-AYUDA----------------------------------------------
 <section id="tipo-ayuda">
 	<div class="content">
 		<div class="container">
         TIPO-AYUDA
-		    <button id="btn_tipo_ayuda">NEXT</button>	
+		    <!--<button id="btn_tipo_ayuda">NEXT</button>	
 		</div>
 	</div>
 </section>
+----->
 <!----------------CENTROS-AYUDA--------------------------------------------------->
 <section id="centros-ayuda">
     <div class="content">
         <div class="container">
            CENTRO-AYUDA
-            <button id="btn_centros_ayuda">NEXT</button>    
+            <!--<button id="btn_centros_ayuda">NEXT</button>-->    
         </div>
     </div>
 </section>

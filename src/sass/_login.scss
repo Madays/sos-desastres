@@ -1,0 +1,37 @@
+section#login{
+    background: url("../pictures/map-background.png");
+   
+    .content{
+        background: rgba(8,19,48,0.8);
+
+        .logo{
+           
+            i{
+                color:rgb(255,104,104);
+                font-size: 150px;
+            }
+        }
+        P{
+             margin-bottom: 80px;
+            padding-top: 30px;
+        }
+        button{
+            width: 230px;
+            margin: 10px 0;
+            
+        }
+        button#facebook{
+            background: rgb(59,89,151);
+            border-color: rgb(59,89,151);
+        }
+        button#google{
+            background: rgb(255,104,104);
+            border-color: rgb(255,104,104);
+        }
+        
+    }
+    
+    
+    
+    
+}

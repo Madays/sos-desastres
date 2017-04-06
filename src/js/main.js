@@ -4,57 +4,46 @@ var currentSection= null;
 function init()
 {
     currentSection= $('#login');
-    $('#btn_inicio').click(onClickInicio);
-    $('#btn_accion').click(onClickAccion)
+    $('#btn_inicio').click(onClickAccion);
     $('#btn_reportar').click(onClickReportar);
-    $('#btn_busca_ayuda').click(onClickBuscaAyuda);
-    $('#btn_tipo_ayuda').click(onClickTipoAyuda);
-    $('#btn_centros_ayuda').click(onClickCentroAyuda);
-    $('#btn_lista_desastres').click(onClickListDesastre);
+    //$('#btn_tipo_ayuda').click(onClickTipoAyuda);
+    $('#btn_centros_ayuda').click(onClickCentroAyuda); $('#btn_lista_desastres').click(onClickListDesastre);
     /*$('#btn_info_desastres').click(onClickInfoDesastre);*/
 }
-function onClickInicio()
-{
-    goToSection('accion');
-}
+
 function onClickAccion()
 {
-    goToSection('reportar-desastre');
-    var toTipoAyuda = $('#m-buscar');
-    toTipoAyuda.hide();
-    initMap();
-    
-    onClickReportar();    
+    goToSection('accion');
+      
 }
 
 function onClickReportar(){
-var btnBuscarAyuda = $("#btn_reportar");        btnBuscarAyuda.click(showDivBuscarAyuda);
-function showDivBuscarAyuda(event){
-    event.preventDefault();
-    var toBuscarAyuda = $('#d-info');
-    toBuscarAyuda.hide();    
+    
+    
+    goToSection('reportar-desastre');
+    
     var toTipoAyuda = $('#m-buscar');
-    //console.log(toTipoAyuda.show());
-    toTipoAyuda.show();
-        
-    }
+    toTipoAyuda.hide();
+    initMap(); 
+    onClickTipoAyuda();
+    
 }
 
-
-
-
-
-/*function onClickReportar()
-{
-    goToSection('buscar-ayuda');
-}*/
-function onClickBuscaAyuda()
-{
-    goToSection('tipo-ayuda');
-}
 function onClickTipoAyuda()
 {
-    goToSection('centros-ayuda');
+    var btnBuscarAyuda = $("#btn_tipo_ayuda");       btnBuscarAyuda.click(showDivBuscarAyuda);
+    
+    function showDivBuscarAyuda(event){
+        event.preventDefault();
+        var toBuscarAyuda = $('#d-info');
+        toBuscarAyuda.hide();    
+        var toTipoAyuda = $('#m-buscar');
+        //console.log(toTipoAyuda.show());
+        toTipoAyuda.show();
+
+    }
+    
+    //goToSection('centros-ayuda');
 }
 function onClickCentroAyuda()
 {

@@ -1,16 +1,19 @@
 /*@import "variables/variables";
 @import "mixin/mixin";*/
+@import "_accion";
 /************************GENERAL************************/
 @import '_reporte.scss';
     
+@import"login";
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid rgba(0,255,0,0.3);
 }
 section{
-    background: rgba(0,0,255,0.3);
+    //lkjfdsgldkfg
+    //background: rgba(0,0,255,0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -28,5 +31,5 @@ section{
 .content{
     display: table-cell;
     vertical-align: middle;
-    background: rgba(0,0,0,0.1);
+  
 }
