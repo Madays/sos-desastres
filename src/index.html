@@ -35,14 +35,16 @@
            
            <div class="col-md-6 col-md-offset-3">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fuga eaque sequi ad odio eos veniam repellendus, molestias dolor consectetur, saepe incidunt, nobis laboriosam iste explicabo excepturi. Ipsam, consequuntur, suscipit.</p>
-               <button id="facebook" class="btn-lg"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</button> 
-               <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+               <button id="facebook" class="btn-lg" onlogin="checkLoginState();" scope="public_profile,email"><i class="fa fa-facebook" aria-hidden="true" ></i> Facebook</button> 
+               <fb:login-button  size="xlarge"  scope="public_profile,email" onlogin="checkLoginState();">
                </fb:login-button>
               <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i> Google</button><br>
                <!-- HTML for render Google Sign-In button -->
+<!--
             <div id="gSignIn"></div>
-            <!-- HTML for displaying user details -->
+             HTML for displaying user details 
             <div class="userContent"></div>
+-->
                 <button id="registrate" class="btn-lg"> Registrate</button> 
             </div>
             <button id="btn_inicio">va accion</button>   
@@ -63,6 +65,58 @@
             <p><button class="btn btn-lg" id="btn_buscar_ayuda">Buscar Ayuda cercana</button></p>
             <p><button class="btn btn-lg" id="">Brindar Ayuda</button></p>
 		    <!--<button id="btn_accion">next button</button>-->  	
+		</div>
+	</div>
+</section>
+<!----------------formulario de registro- compañia--------------------------------------------------->
+<section id="registro"  >
+	<div class="content">
+		<div class="container">
+           <h2>Registrate</h2>
+            <div class="col-md-8 col-md-offset-2">
+                <form>
+                  <div class="form-group">
+                        <label for="exampleInputEmail1" class="pull-left">Email </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+                      </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="pull-left">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                   <div class="form-group">
+                        <label for="exampleInputName2" class="pull-left">Telefono</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="052 987653">
+                      </div>
+                        <div class="form-group">
+                        <label for="exampleInputName2" class="pull-left">Direccion</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Av. Salaverry #213">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputName2" class="pull-left">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Paz Peru">
+                      </div>
+                    
+                    <div class="form-group">
+                    <label for="exampleSelect1" class="pull-left">Tipo de Organizacion</label>
+                    <select class="form-control" id="exampleSelect1">
+                      <option>Gubernamental</option>
+                      <option>No Gubernamental</option>
+                      
+                    </select>
+                  </div>
+                   
+                  <div class="form-group">
+                    <label for="exampleTextarea" class="pull-left">Descripcion</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                  </div>
+                
+                 
+                  
+                  <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
+                </form>
+                
+            </div>  	
 		</div>
 	</div>
 </section>

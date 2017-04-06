@@ -24,9 +24,6 @@ body {
       color: #fff; }
 
 /************************GENERAL************************/
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.4) !important; }
-
 #map {
   position: absolute;
   left: 0;
@@ -117,8 +114,6 @@ section#registro {
   color: black; }
   section#registro h2 {
     padding-bottom: 40px; }
-  section#registro form div {
-    padding: 5px; }
   section#registro form button {
     width: 90%;
     margin: 10px 0; }
