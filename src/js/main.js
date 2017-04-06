@@ -5,12 +5,20 @@ function init()
 {
     currentSection= $('#login');
     $('#btn_inicio').click(onClickAccion);
+    $('#login-button').click(onClickLogin);
+    $('#signup-button').click(onClickSignup);
     $('#btn_reportar').click(onClickReportar);
     $('.btn_tipo_ayuda').click(onClickAccion);
     $('#btn_centros_ayuda').click(onClickCentroAyuda); $('#btn_lista_desastres').click(onClickListDesastre);
+    
     /*$('#btn_info_desastres').click(onClickInfoDesastre);*/
 }
-
+function onClickLogin(){
+     goToSection('log-orga');
+}
+function onClickSignup(){
+    goToSection('registro-com');
+}
 function onClickAccion()
 {
     goToSection('accion');

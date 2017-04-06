@@ -1,15 +1,18 @@
 /*@import "variables/variables";
 @import "mixin/mixin";*/
 @import "_accion";
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans" ;
 /************************GENERAL************************/
 @import '_reporte.scss';
-    
-@import"login";
+@import '_login.scss';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather Sans" !important;
 }
 section{
     //lkjfdsgldkfg
@@ -22,11 +25,12 @@ section{
     display: none;
     opacity: 0;
     color: #fff;
+    //background: url("../pictures/map-background.png");
 }
 .visible{
     display: table;
     opacity: 1;
-    
+    //background: rgba(8,19,48,0.8);
 }
 .content{
     display: table-cell;

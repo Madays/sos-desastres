@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid rgba(255,0,0,0.4)!important; 
+//    outline: 1px solid rgba(255,0,0,0.4)!important; 
 }
 #map {
     position: absolute;
@@ -17,16 +17,16 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
+    background: #ebebeb;
     margin: 0 auto;
-    color: #000;
+    color: #fff;
     padding: 0;
     padding-top: 20px;
     
     .btn_tipo_ayuda{
         width: 100%;
         padding: 15px;
-        background-color: #12127c;
+        background-color: rgb(255,104,104);
         margin-top: 10px;
     }
     select, input {
@@ -40,9 +40,9 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #cecece;
+    background-color:#ebebeb;
     margin: 0 auto;
-    color: #000;
+    color: #fff;
     padding: 0;
     padding-top: 20px;
     
@@ -51,16 +51,18 @@
         margin-left: 0; 
     }
     button{
+        border-color: #ebebeb;
         i{
             font-size: 30px;
-            color:rgba(8,19,48,.8);
-            background-color: #cecece;
+            color:firebrick;
+            background-color: #ebebeb;
+            
         }
     }
     #btn_buscar{
         width: 100%;
         padding: 15px;
-        background-color: #12127c;
+        background-color: #28d;
         margin-top: 10px;
     }
     #pac-input {
@@ -69,7 +71,7 @@
         width: 100%;
         top: 10px;
         padding: 10px 0;
-        padding-top: 20px;
+        padding-top: 10px;
         color: black;
     }
 }
