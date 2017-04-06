@@ -10,6 +10,7 @@
 	<!--REQUIRED STYLE SHEETS-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/queries/queries.css">
+	 <meta name="google-signin-client_id" content="1015828251628-60f1ighjl9tsctj0lo3djiub39qqbm1d.apps.googleusercontent.com">
 </head>
 <body class="text-center">
 	
@@ -33,6 +34,10 @@
                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
                </fb:login-button>
               <button id="google" class="btn-lg"><i class="fa fa-google" aria-hidden="true"></i> Google</button><br>
+               <!-- HTML for render Google Sign-In button -->
+            <div id="gSignIn"></div>
+            <!-- HTML for displaying user details -->
+            <div class="userContent"></div>
                 <button id="registrate" class="btn-lg"> Registrate</button> 
             </div>
             <button id="btn_inicio">va accion</button>   
@@ -163,9 +168,11 @@
 </section>
 <!----------------SCRIPTS--------------------------------------------------->	
     <script src="js/jquery.min.js"></script>
-    
+    <script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI&libraries=places"
          async defer></script>
+         <script src="js/login-g.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="js/hospitales.js"></script>
