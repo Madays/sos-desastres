@@ -42,20 +42,22 @@ function onClickTipoAyuda()
         toBuscarAyuda.hide();    
         var toTipoAyuda = $('#m-buscar');
         toTipoAyuda.show();
-        $('#pac-input').show();
-        
-        //$('#hospital').submit(search('Hospitales cerca de'+));
-        //$('#bombero').submit(search('Bomberos cerca de mi'));
-        //$('#comisaria').submit(search('Comisarias cerca de mi'));
-        
+        $('#pac-input').show();        
     }
+    
+    //$('#hospital').click(search('Hospitales'));
+    //$('#bombero').click(search('Bomberos'));
+    //$('#comisaria').click(search('Comisarias'));
   //goToSection('centros-ayuda');
 }
+
+/*
 function search(place){
      $('#pac-input').val('');
      $('#pac-input').val(place).focus().trigger({type:'keypress',which:13});
     
 }
+*/
 
 function onClickCentroAyuda()
 {
@@ -93,7 +95,7 @@ function initAutocomplete() {
 });
     
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
+          center: {lat: -16.459908, lng: -71.515903},
           zoom: 13,
           mapTypeId: 'roadmap'
         });
