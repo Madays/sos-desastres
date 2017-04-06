@@ -5,29 +5,33 @@ function init()
 {
     currentSection= $('#login');
     $('#btn_inicio').click(onClickAccion);
-    $('#btn_reportar').click(onClickReportar)
-    $('#btn_buscar_ayuda').click(onClickBuscarAyuda);
-    $('#btn_tipo_ayuda').click(onClickTipoAyuda);
-    $('#btn_centros_ayuda').click(onClickCentroAyuda);
-    $('#btn_lista_desastres').click(onClickListDesastre);
+    $('#btn_reportar').click(onClickReportar);
+    //$('#btn_tipo_ayuda').click(onClickTipoAyuda);
+    $('#btn_centros_ayuda').click(onClickCentroAyuda); $('#btn_lista_desastres').click(onClickListDesastre);
     /*$('#btn_info_desastres').click(onClickInfoDesastre);*/
 }
+
 function onClickAccion()
 {
     goToSection('accion');
-}
-function onClickReportar()
-{
-    goToSection('reportar-desastre');
-    var toTipoAyuda = $('#m-buscar');
-    toTipoAyuda.hide();
-    initMap();
-    
-    onClickReportar();    
+      
 }
 
 function onClickReportar(){
-    var btnBuscarAyuda = $("#btn_reportar");       btnBuscarAyuda.click(showDivBuscarAyuda);
+    
+    
+    goToSection('reportar-desastre');
+    
+    var toTipoAyuda = $('#m-buscar');
+    toTipoAyuda.hide();
+    initMap(); 
+    onClickTipoAyuda();
+    
+}
+
+function onClickTipoAyuda()
+{
+    var btnBuscarAyuda = $("#btn_tipo_ayuda");       btnBuscarAyuda.click(showDivBuscarAyuda);
     
     function showDivBuscarAyuda(event){
         event.preventDefault();
@@ -37,16 +41,9 @@ function onClickReportar(){
         //console.log(toTipoAyuda.show());
         toTipoAyuda.show();
 
-        }
-}
-
-function onClickBuscaAyuda()
-{
-    goToSection('tipo-ayuda');
-}
-function onClickTipoAyuda()
-{
-    goToSection('centros-ayuda');
+    }
+    
+    //goToSection('centros-ayuda');
 }
 function onClickCentroAyuda()
 {

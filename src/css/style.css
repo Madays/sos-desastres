@@ -24,13 +24,8 @@ body {
       color: #fff; }
 
 /************************GENERAL************************/
-
 * {
-  outline: 1px solid rgba(255, 0, 0, 0.4) !important; 
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; 
-}
+  outline: 1px solid rgba(255, 0, 0, 0.4) !important; }
 
 #map {
   position: absolute;
@@ -52,7 +47,7 @@ body {
   color: #000;
   padding: 0;
   padding-top: 20px; }
-  #d-info #btn_reportar {
+  #d-info #btn_tipo_ayuda {
     width: 100%;
     padding: 15px;
     background-color: #12127c;
@@ -60,27 +55,6 @@ body {
   #d-info select, #d-info input {
     width: 95%;
     margin: 0 auto; }
-
-
-section#login {
-  background: url("../pictures/map-background.png"); }
-  section#login .content {
-    background: rgba(8, 19, 48, 0.8); }
-    section#login .content .logo i {
-      color: #ff6868;
-      font-size: 150px; }
-    section#login .content P {
-      margin-bottom: 80px;
-      padding-top: 30px; }
-    section#login .content button {
-      width: 230px;
-      margin: 10px 0; }
-    section#login .content button#facebook {
-      background: #3b5997;
-      border-color: #3b5997; }
-    section#login .content button#google {
-      background: #ff6868;
-      border-color: #ff6868; }
 
 #m-buscar {
   position: absolute;
@@ -103,6 +77,30 @@ section#login {
     background-color: #12127c;
     margin-top: 10px; }
 
+section#login {
+  background: url("../pictures/map-background.png"); }
+  section#login .content {
+    background: rgba(8, 19, 48, 0.8); }
+    section#login .content .logo i {
+      color: #ff6868;
+      font-size: 150px; }
+    section#login .content P {
+      margin-bottom: 80px;
+      padding-top: 30px; }
+    section#login .content button {
+      width: 230px;
+      margin: 10px 0; }
+    section#login .content button#facebook {
+      background: #3b5997;
+      border-color: #3b5997; }
+    section#login .content button#google {
+      background: #ff6868;
+      border-color: #ff6868; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 section {
   position: absolute;
