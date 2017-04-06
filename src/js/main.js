@@ -80,7 +80,7 @@ function goToSection(_id)
 function initAutocomplete() {
     
     
-        $("#hospital").click(function (){
+    $("#hospital").click(function (){
     if ("geolocation" in navigator){
             navigator.geolocation.getCurrentPosition(function(position){ 
                     infoWindow = new google.maps.InfoWindow({map: map});
@@ -95,10 +95,11 @@ function initAutocomplete() {
 });
     
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -16.459908, lng: -71.515903},
-          zoom: 13,
-          mapTypeId: 'roadmap'
-        });
+            center: {lat: -16.459908, lng: -71.515903},
+            zoom: 13,
+            mapTypeId: 'roadmap',
+            disableDefaultUI: true
+        }) ;
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
