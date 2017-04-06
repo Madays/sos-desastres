@@ -4,20 +4,19 @@ var currentSection= null;
 function init()
 {
     currentSection= $('#login');
-    $('#btn_inicio').click(onClickInicio);
-    $('#btn_accion').click(onClickAccion)
-    $('#btn_reportar').click(onClickReportar);
-    $('#btn_busca_ayuda').click(onClickBuscaAyuda);
+    $('#btn_inicio').click(onClickAccion);
+    $('#btn_reportar').click(onClickReportar)
+    $('#btn_buscar_ayuda').click(onClickBuscarAyuda);
     $('#btn_tipo_ayuda').click(onClickTipoAyuda);
     $('#btn_centros_ayuda').click(onClickCentroAyuda);
     $('#btn_lista_desastres').click(onClickListDesastre);
     /*$('#btn_info_desastres').click(onClickInfoDesastre);*/
 }
-function onClickInicio()
+function onClickAccion()
 {
     goToSection('accion');
 }
-function onClickAccion()
+function onClickReportar()
 {
     goToSection('reportar-desastre');
     //var toTipoAyuda = $('#m-buscar');
@@ -41,13 +40,6 @@ function showBuscarAyuda(){
     
 }
 
-
-
-
-function onClickReportar()
-{
-    goToSection('buscar-ayuda');
-}
 function onClickBuscaAyuda()
 {
     goToSection('tipo-ayuda');
