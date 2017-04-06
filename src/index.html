@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--REQUIRED STYLE SHEETS-->
-	<link rel="stylesheet" href="sass/style.scss">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/queries/queries.css">
 </head>
 <body class="text-center">
@@ -72,10 +72,18 @@
     </div>
 </section>
 <!----------------LISTA-DESASTRES--------------------------------------------------->
-<section id="lista-desastres">
+<section id="lista-desastre" class="visible">
     <div class="content">
         <div class="container">
-           LISTA-DESASTRE
+            LISTA DESASTRE
+                <div id="map"></div>
+                    <!--action="/action_page_binary.asp" method="post" enctype="multipart/form-data"-->
+                <div id="d-info">
+                   <form method="post" action="" name="validation" id="form-info">
+                        
+                        <button type="submit"  id="btn_tipo_ayuda">NEXT</button>
+                    </form>
+                </div>
             <button id="btn_lista_desastres">NEXT</button>    
         </div>
     </div>
@@ -90,8 +98,11 @@
     </div>
 </section>
 <!----------------SCRIPTS--------------------------------------------------->	
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI&libraries=places"
+         async defer></script>
     <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>	
+	<script src="js/main.js"></script>
+	<script src="js/lista-desastre.js"></script>	
 </body>
 </html>
