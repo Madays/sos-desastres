@@ -77,10 +77,10 @@ function getLocation() {
 }
 
 function showPosition(position) {
-   var myLatLng = {lat:position.coords.latitude,lon:position.coords.longitude};
-   map = new google.maps.Map(document.getElementById('map'), {
-   center: {lat: myLatLng.lat, lng: myLatLng.lon},
-   zoom: 16,
+    var myLatLng =  {lat:position.coords.latitude,lon:position.coords.longitude};
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: myLatLng.lat, lng: myLatLng.lon},
+    zoom: 16,
     disableDefaultUI: true
  });
    
