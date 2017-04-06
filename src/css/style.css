@@ -113,7 +113,9 @@ section#login {
 section#registro {
   color: black; }
   section#registro h2 {
-    padding-bottom: 40px; }
+    padding-bottom: 20px; }
+  section#registro form .form-group {
+    margin-bottom: 5px !important; }
   section#registro form button {
     width: 90%;
     margin: 10px 0; }
@@ -142,6 +144,69 @@ section#registro {
 
 .proDetails {
   float: left; }
+
+section#log-orga {
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+  background: url("../pictures/map-background.png"); }
+  section#log-orga .content {
+    background: rgba(8, 19, 48, 0.8); }
+    section#log-orga .content body {
+      background: #456;
+      font-family: 'Open Sans', sans-serif; }
+    section#log-orga .content .login {
+      width: 400px;
+      margin: 16px auto;
+      font-size: 16px; }
+    section#log-orga .content .login-header,
+    section#log-orga .content .login p {
+      margin-top: 0;
+      margin-bottom: 0; }
+    section#log-orga .content .login-triangle {
+      width: 0;
+      margin-right: auto;
+      margin-left: auto;
+      border: 12px solid transparent;
+      border-bottom-color: #ff6868; }
+    section#log-orga .content .login-header {
+      background: #ff6868;
+      padding: 20px;
+      font-size: 1.4em;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff; }
+    section#log-orga .content .login-container {
+      background: #ebebeb;
+      padding: 12px; }
+    section#log-orga .content .login p {
+      padding: 12px; }
+    section#log-orga .content .login input {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-width: 1px;
+      border-style: solid;
+      padding: 16px;
+      outline: 0;
+      font-family: inherit;
+      font-size: 0.95em; }
+    section#log-orga .content .login input[type="email"],
+    section#log-orga .content .login input[type="password"] {
+      background: #fff;
+      border-color: #bbb;
+      color: #555; }
+    section#log-orga .content .login input[type="email"]:focus,
+    section#log-orga .content .login input[type="password"]:focus {
+      border-color: #888; }
+    section#log-orga .content .login input[type="submit"] {
+      background: #ff6868;
+      border-color: transparent;
+      color: #fff;
+      cursor: pointer; }
+    section#log-orga .content .login input[type="submit"]:hover {
+      background: #ff6868; }
+    section#log-orga .content .login input[type="submit"]:focus {
+      border-color: #ff6868; }
 
 * {
   padding: 0;
