@@ -146,29 +146,29 @@ section#registro form button {
 .proDetails {
   float: left; }
 
-section#log-orga {
+section#login {
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
   background: url("../pictures/map-background.png"); }
-  section#log-orga .content {
+  section#login .content {
     background: rgba(8, 19, 48, 0.8); }
-    section#log-orga .content body {
+    section#login .content body {
       background: #456;
       font-family: 'Open Sans', sans-serif; }
-    section#log-orga .content .login {
+    section#login .content .login {
       width: 400px;
       margin: 16px auto;
       font-size: 16px; }
-    section#log-orga .content .login-header,
-    section#log-orga .content .login p {
+    section#login .content .login-header,
+    section#login .content .login p {
       margin-top: 0;
       margin-bottom: 0; }
-    section#log-orga .content .login-triangle {
+    section#login .content .login-triangle {
       width: 0;
       margin-right: auto;
       margin-left: auto;
       border: 12px solid transparent;
       border-bottom-color: #ff6868; }
-    section#log-orga .content .login-header {
+    section#login .content .login-header {
       background: #ff6868;
       padding: 20px;
       font-size: 1.4em;
@@ -176,12 +176,12 @@ section#log-orga {
       text-align: center;
       text-transform: uppercase;
       color: #fff; }
-    section#log-orga .content .login-container {
+    section#login .content .login-container {
       background: #ebebeb;
       padding: 12px; }
-    section#log-orga .content .login p {
+    section#login .content .login p {
       padding: 12px; }
-    section#log-orga .content .login input {
+    section#login .content .login input {
       box-sizing: border-box;
       display: block;
       width: 100%;
@@ -191,22 +191,22 @@ section#log-orga {
       outline: 0;
       font-family: inherit;
       font-size: 0.95em; }
-    section#log-orga .content .login input[type="email"],
-    section#log-orga .content .login input[type="password"] {
+    section#login .content .login input[type="email"],
+    section#login .content .login input[type="password"] {
       background: #fff;
       border-color: #bbb;
       color: #555; }
-    section#log-orga .content .login input[type="email"]:focus,
-    section#log-orga .content .login input[type="password"]:focus {
+    section#login .content .login input[type="email"]:focus,
+    section#login .content .login input[type="password"]:focus {
       border-color: #888; }
-    section#log-orga .content .login input[type="submit"] {
+    section#login .content .login input[type="submit"] {
       background: #ff6868;
       border-color: transparent;
       color: #fff;
       cursor: pointer; }
-    section#log-orga .content .login input[type="submit"]:hover {
+    section#login .content .login input[type="submit"]:hover {
       background: #ff6868; }
-    section#log-orga .content .login input[type="submit"]:focus {
+    section#login .content .login input[type="submit"]:focus {
       border-color: #ff6868; }
 
 * {
