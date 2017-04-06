@@ -47,7 +47,7 @@ function UserLogin(res){
     sessionStorage.setItem('school', res.attributes.school);
     sessionStorage.setItem('username', res.attributes.name);
     sessionStorage.setItem('token', res.getSessionToken());
-    window.location = '/';
+    //window.location = '/';
 }
 //si el usuario no esta en la base de datos
 function registrarUserFacebook(response){
