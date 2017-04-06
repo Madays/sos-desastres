@@ -5,7 +5,7 @@ body{
 }
 section#login{
     background: url("../pictures/map-background.png");
-    *{outline: 1px solid rgba(0,255,0,0.3)}
+//    *{outline: 1px solid rgba(0,255,0,0.3)}
     .content{
         background: rgba(8,19,48,0.8);
 
@@ -37,10 +37,20 @@ section#login{
     }  
 }
 
+
 section#registro{
+
+
+section#registro-comp{
+    background: url("../pictures/map-background.png");
+//    *{outline: 1px solid rgba(0,255,0,0.3)}
+    .content{
+        background: rgba(8,19,48,0.8);
+
     
     h2{
         padding-bottom: 20px;
+        color: cornflowerblue;
     }
     form {
         .form-group {
@@ -51,11 +61,32 @@ section#registro{
             margin: 10px 0;
             background: rgb(255,104,104);
         }
+        }
     }
     
 }
 
+
 section#login{
+
+//jvcnvjcnvmc google
+.profile{
+    border: 3px solid #B7B7B7;
+    padding: 10px;
+    margin-top: 10px;
+    width: 350px;
+    background-color: #F7F7F7;
+    height: 160px;
+}
+.profile p{margin: 0px 0px 10px 0px;}
+.head{margin-bottom: 10px;}
+.head a{float: right;}
+.profile img{width: 100px;float: left;margin: 0px 10px 10px 0px;}
+.proDetails{float: left;}
+        
+//login de organizacion
+section#log-orga{
+
     
 background: url("../pictures/map-background.png");
 .content{
@@ -64,6 +95,25 @@ background: url("../pictures/map-background.png");
 }
 .login {
   width: 100%;
+
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color:  rgb(255,104,104);
 }
 .login-header {
   background:  rgba(0,0,0,0.8);
