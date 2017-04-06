@@ -1,14 +1,14 @@
 section#login{
     background: url("../pictures/map-background.png");
-   
+    *{outline: 1px solid rgba(0,255,0,0.3)}
     .content{
         background: rgba(8,19,48,0.8);
 
         .logo{
-           
-            i{
-                color:rgb(255,104,104);
-                font-size: 150px;
+            width:250px;
+            margin: 0 auto ;
+            img{
+                
             }
         }
         P{
@@ -56,9 +56,3 @@ section#registro{
     
 }
         
-    }
-    
-    
-    
-    
-}
