@@ -28,6 +28,33 @@ section#login{
             background: rgb(255,104,104);
             border-color: rgb(255,104,104);
         }
+         button#registrate{
+            background: rgb(255,104,104);
+            border-color: rgb(255,104,104);
+        }
+        
+    }
+    
+    
+    
+    
+}
+section#registro{
+    color: black;
+    h2{
+        padding-bottom: 40px;
+    }
+    form {
+        div{
+            padding: 5px;
+        }
+        button{
+            width: 90%;
+            margin: 10px 0;
+        }
+    }
+    
+}
         
     }
     
