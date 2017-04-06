@@ -104,14 +104,7 @@ function logout(){
     //recupera el correo electronico con scope
   }
 
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '406214259746931',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.8' // use graph api version 2.8
-  });
+  
 
   // Now that we've initialized the JavaScript SDK, we call 
   // FB.getLoginStatus().  This function gets the state of the
