@@ -63,6 +63,13 @@
         background-color: #12127c;
         margin-top: 10px;
     }
+    input {
+        position: absolute;
+        z-index: 5;
+        top: 10px;
+        padding: 10px 0;
+        color: black;
+    }
 }
 
 

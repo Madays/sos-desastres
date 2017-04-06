@@ -79,6 +79,19 @@
                 </div>
                 
                 <div id="m-buscar">
+                   <input id="pac-input" class="controls" type="text" placeholder="Search Box" style="color:black">
+                   <div class="row">
+                       <div class="col-xs-4">
+                           <button id="hospital" class="btn">Hospitales</button>
+                       </div>
+                       <div class="col-xs-4">
+                           <button id="bombero" class="btn">Bomberos</button>
+                       </div>
+                       <div class="col-xs-4">
+                          <button id="comisaria" class="btn">Comisarias</button>
+                       </div>
+                   </div>
+                   <br>
                     <div class="row">
                         <div class="col-xs-6">
                             <button><i class="fa fa-phone" aria-hidden="true"></i></button>
@@ -143,8 +156,9 @@
 </section>
 <!----------------SCRIPTS--------------------------------------------------->	
     <script src="js/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI"
-        async deser></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTCqoAARuw47ZDf2wg7OlrkVaPnDAlNbI&libraries=places"
+         async defer></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="js/hospitales.js"></script>
