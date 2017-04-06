@@ -27,37 +27,31 @@ function onClickReportar(){
     $('#pac-input').hide();
     //initMap(); 
     initAutocomplete();
-    onClickTipoAyuda();
+    onClickTipoAyuda(); 
     
 }
 
 function onClickTipoAyuda()
-{
+{    
     var btnBuscarAyuda = $("#btn_tipo_ayuda");       btnBuscarAyuda.click(showDivBuscarAyuda);
-    
-    function showDivBuscarAyuda(event){
+}
+function showDivBuscarAyuda(event){
+        alert('hospital');
         event.preventDefault();
-        
+        alert('ayuda');
         var toBuscarAyuda = $('#d-info');
-        toBuscarAyuda.hide();    
         var toTipoAyuda = $('#m-buscar');
+        toBuscarAyuda.hide();            
         toTipoAyuda.show();
-        $('#pac-input').show();        
+        $('#pac-input').show();                
     }
-    
-    //$('#hospital').click(search('Hospitales'));
-    //$('#bombero').click(search('Bomberos'));
-    //$('#comisaria').click(search('Comisarias'));
-  //goToSection('centros-ayuda');
-}
+ $('#bombero').on('click',function(){search('bomberos');});
+    function search(place){
+            
+             $('#pac-input').val('');
+             $('#pac-input').val(place).focus().trigger({type:'keypress',which:13});
 
-/*
-function search(place){
-     $('#pac-input').val('');
-     $('#pac-input').val(place).focus().trigger({type:'keypress',which:13});
-    
-}
-*/
+        }
 
 function onClickCentroAyuda()
 {
@@ -82,20 +76,28 @@ function initAutocomplete() {
 }
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.watchPosition(showPosition);
     } else { 
         alert("Geolocation is not supported by this browser.");
     }
+    
 }
 
 function showPosition(position) {
+            var myLatLng = {lat:position.coords.latitude,lon:position.coords.longitude};
             var map = new google.maps.Map(document.getElementById('map'), {
             
-            center: {lat: position.coords.latitude, lng: position.coords.longitude},
-            zoom: 13,
+            center: {lat: myLatLng.lat, lng: myLatLng.lon},
+            zoom: 16,
             mapTypeId: 'roadmap',
             disableDefaultUI: true
         }) ;
+        var marker1 = new google.maps.Marker({        
+        map: map,
+        position: {lat: myLatLng.lat, lng: myLatLng.lon},
+        title: 'Hello World!',
+        //icon:"img/car.png"
+    });
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
