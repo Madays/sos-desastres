@@ -1,14 +1,14 @@
 section#login{
     background: url("../pictures/map-background.png");
-   
+    *{outline: 1px solid rgba(0,255,0,0.3)}
     .content{
         background: rgba(8,19,48,0.8);
 
         .logo{
-           
-            i{
-                color:rgb(255,104,104);
-                font-size: 150px;
+            width:250px;
+            margin: 0 auto ;
+            img{
+                
             }
         }
         P{
@@ -28,6 +28,10 @@ section#login{
             background: rgb(255,104,104);
             border-color: rgb(255,104,104);
         }
+         button#registrate{
+            background: rgb(255,104,104);
+            border-color: rgb(255,104,104);
+        }
         
     }
     
@@ -35,3 +39,20 @@ section#login{
     
     
 }
+section#registro{
+    color: black;
+    h2{
+        padding-bottom: 40px;
+    }
+    form {
+        div{
+            padding: 5px;
+        }
+        button{
+            width: 90%;
+            margin: 10px 0;
+        }
+    }
+    
+}
+        

@@ -82,11 +82,13 @@ body {
 
 section#login {
   background: url("../pictures/map-background.png"); }
+  section#login * {
+    outline: 1px solid rgba(0, 255, 0, 0.3); }
   section#login .content {
     background: rgba(8, 19, 48, 0.8); }
-    section#login .content .logo i {
-      color: #ff6868;
-      font-size: 150px; }
+    section#login .content .logo {
+      width: 250px;
+      margin: 0 auto; }
     section#login .content P {
       margin-bottom: 80px;
       padding-top: 30px; }
@@ -99,6 +101,19 @@ section#login {
     section#login .content button#google {
       background: #ff6868;
       border-color: #ff6868; }
+    section#login .content button#registrate {
+      background: #ff6868;
+      border-color: #ff6868; }
+
+section#registro {
+  color: black; }
+  section#registro h2 {
+    padding-bottom: 40px; }
+  section#registro form div {
+    padding: 5px; }
+  section#registro form button {
+    width: 90%;
+    margin: 10px 0; }
 
 * {
   padding: 0;
