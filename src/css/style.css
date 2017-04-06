@@ -1,11 +1,43 @@
 /*@import "variables/variables";
 @import "mixin/mixin";*/
 /************************GENERAL************************/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid rgba(0, 255, 0, 0.3); }
+  outline: 1px solid rgba(255, 0, 0, 0.4) !important; 
+}
+
+
+#map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%; }
+
+#d-info {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #cecece;
+  margin: 0 auto;
+  color: #000;
+  padding: 0;
+  padding-top: 20px; }
+  #d-info #btn_reportar {
+    width: 100%;
+    padding: 15px;
+    background-color: #12127c;
+    margin-top: 10px; }
+  #d-info select, #d-info input {
+    width: 95%;
+    margin: 0 auto; }
 
 section {
   background: rgba(0, 0, 255, 0.3);
