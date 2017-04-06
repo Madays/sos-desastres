@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans" ;
+
+body{
+    font-family: "Merriweather Sans";
+}
 section#login{
     background: url("../pictures/map-background.png");
     *{outline: 1px solid rgba(0,255,0,0.3)}
@@ -5,41 +10,32 @@ section#login{
         background: rgba(8,19,48,0.8);
 
         .logo{
-            width:250px;
+            width:220px;
             margin: 0 auto ;
-            img{
-                
-            }
         }
-        P{
+        h1{
+            
+        }
+        p{
              margin-bottom: 80px;
             padding-top: 30px;
         }
         button{
             width: 230px;
             margin: 10px 0;
+            background: rgb(59,89,152);
+            padding: 10px 0;
+            font-weight: 300;
+            box-shadow: 1px 1px rgba(0,0,0,0.4);
             
         }
-        button#facebook{
-            background: rgb(59,89,151);
-            border-color: rgb(59,89,151);
-        }
-        button#google{
-            background: rgb(255,104,104);
-            border-color: rgb(255,104,104);
-        }
-         button#registrate{
-            background: rgb(255,104,104);
-            border-color: rgb(255,104,104);
+        button:hover{
+            background: #000;
+            color: #fff;
         }
         
-    }
-    
-    
-    
-    
+    }  
 }
-
 
 section#registro{
     
@@ -58,73 +54,24 @@ section#registro{
     }
     
 }
-//jvcnvjcnvmc google
-.profile{
-    border: 3px solid #B7B7B7;
-    padding: 10px;
-    margin-top: 10px;
-    width: 350px;
-    background-color: #F7F7F7;
-    height: 160px;
-}
-.profile p{margin: 0px 0px 10px 0px;}
-.head{margin-bottom: 10px;}
-.head a{float: right;}
-.profile img{width: 100px;float: left;margin: 0px 10px 10px 0px;}
-.proDetails{float: left;}
-        
-//login de organizacion
+
 section#login{
     
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 background: url("../pictures/map-background.png");
-    .content{
+.content{
         background: rgba(8,19,48,0.8);
-
-body {
-  background: #456;
-  font-family: 'Open Sans', sans-serif;
+    }
 }
-
 .login {
-  width: 400px;
-  margin: 16px auto;
-  font-size: 16px;
+  width: 100%;
 }
-
-
-.login-header,
-.login p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-.login-triangle {
-  width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border: 12px solid transparent;
-  border-bottom-color:  rgb(255,104,104);
-}
-
 .login-header {
-  background:  rgb(255,104,104);
-  padding: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
+  background:  rgba(0,0,0,0.8);
   color: #fff;
 }
 
 .login-container {
   background: #ebebeb;
-  padding: 12px;
-}
-
-
-.login p {
   padding: 12px;
 }
 
@@ -140,33 +87,3 @@ body {
   font-size: 0.95em;
 }
 
-.login input[type="email"],
-.login input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
-}
-
-
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
-  border-color: #888;
-}
-
-.login input[type="submit"] {
-  background:  rgb(255,104,104);
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.login input[type="submit"]:hover {
-  background:  rgb(255,104,104);
-}
-
-
-.login input[type="submit"]:focus {
-  border-color:  rgb(255,104,104);
-}
-    }
-}

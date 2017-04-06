@@ -2,6 +2,8 @@
 @import "mixin/mixin";*/
 @import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
 /***************General***************/
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
+@import "https://fonts.googleapis.com/css?family=Merriweather+Sans";
 body {
   font-family: "Merriweather Sans"; }
 
@@ -87,6 +89,9 @@ body {
     padding-top: 10px;
     color: black; }
 
+body {
+  font-family: "Merriweather Sans"; }
+
 section#login {
   background: url("../pictures/map-background.png"); }
   section#login * {
@@ -94,23 +99,21 @@ section#login {
   section#login .content {
     background: rgba(8, 19, 48, 0.8); }
     section#login .content .logo {
-      width: 250px;
+      width: 220px;
       margin: 0 auto; }
-    section#login .content P {
+    section#login .content p {
       margin-bottom: 80px;
       padding-top: 30px; }
     section#login .content button {
       width: 230px;
-      margin: 10px 0; }
-    section#login .content button#facebook {
-      background: #3b5997;
-      border-color: #3b5997; }
-    section#login .content button#google {
-      background: #ff6868;
-      border-color: #ff6868; }
-    section#login .content button#registrate {
-      background: #ff6868;
-      border-color: #ff6868; }
+      margin: 10px 0;
+      background: #3b5998;
+      padding: 10px 0;
+      font-weight: 300;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4); }
+    section#login .content button:hover {
+      background: #000;
+      color: #fff; }
 
 section#registro h2 {
   padding-bottom: 20px; }
@@ -121,98 +124,40 @@ section#registro form button {
   margin: 10px 0;
   background: #ff6868; }
 
-.profile {
-  border: 3px solid #B7B7B7;
-  padding: 10px;
-  margin-top: 10px;
-  width: 350px;
-  background-color: #F7F7F7;
-  height: 160px; }
-
-.profile p {
-  margin: 0px 0px 10px 0px; }
-
-.head {
-  margin-bottom: 10px; }
-
-.head a {
-  float: right; }
-
-.profile img {
-  width: 100px;
-  float: left;
-  margin: 0px 10px 10px 0px; }
-
-.proDetails {
-  float: left; }
-
 section#login {
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
   background: url("../pictures/map-background.png"); }
   section#login .content {
     background: rgba(8, 19, 48, 0.8); }
-    section#login .content body {
-      background: #456;
-      font-family: 'Open Sans', sans-serif; }
-    section#login .content .login {
-      width: 400px;
-      margin: 16px auto;
-      font-size: 16px; }
-    section#login .content .login-header,
-    section#login .content .login p {
-      margin-top: 0;
-      margin-bottom: 0; }
-    section#login .content .login-triangle {
-      width: 0;
-      margin-right: auto;
-      margin-left: auto;
-      border: 12px solid transparent;
-      border-bottom-color: #ff6868; }
-    section#login .content .login-header {
-      background: #ff6868;
-      padding: 20px;
-      font-size: 1.4em;
-      font-weight: normal;
-      text-align: center;
-      text-transform: uppercase;
-      color: #fff; }
-    section#login .content .login-container {
-      background: #ebebeb;
-      padding: 12px; }
-    section#login .content .login p {
-      padding: 12px; }
-    section#login .content .login input {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-width: 1px;
-      border-style: solid;
-      padding: 16px;
-      outline: 0;
-      font-family: inherit;
-      font-size: 0.95em; }
-    section#login .content .login input[type="email"],
-    section#login .content .login input[type="password"] {
-      background: #fff;
-      border-color: #bbb;
-      color: #555; }
-    section#login .content .login input[type="email"]:focus,
-    section#login .content .login input[type="password"]:focus {
-      border-color: #888; }
-    section#login .content .login input[type="submit"] {
-      background: #ff6868;
-      border-color: transparent;
-      color: #fff;
-      cursor: pointer; }
-    section#login .content .login input[type="submit"]:hover {
-      background: #ff6868; }
-    section#login .content .login input[type="submit"]:focus {
-      border-color: #ff6868; }
+
+.login {
+  width: 100%; }
+
+.login-header {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff; }
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px; }
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em; }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: "Merriweather Sans" !important; }
 
 section {
   position: absolute;
